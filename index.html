@@ -32,6 +32,10 @@
             font-size: 42px;
             font-weight: bold;
         }
+        .header h1 a {
+            text-decoration: none;
+            color: white;
+        }
         .nav {
             display: flex;
             gap: 25px;
@@ -63,7 +67,7 @@
             flex-direction: row-reverse;
         }
         .section img {
-            width: 45%;
+            width: 29.25%; /* 65% de 45% */
             height: auto;
             border-radius: 8px;
         }
@@ -91,14 +95,17 @@
             flex-direction: column;
             align-items: center;
         }
+        
     </style>
 </head>
 <body>
     <header class="header">
         <img src="bles.png" alt="Blessing Logo">
-        <h1>Blessing</h1>
+        <!-- Enlace agregado a "Blessing" para redirigir al index.html -->
+        <h1><a href="index.html">Blessing</a></h1>
         <nav class="nav">
-            <a href="#token-bles">Token Bles</a>
+            <!-- Redirige al archivo tokenbles.html en la misma ventana -->
+            <a href="tokenbles.html">Token Bles</a>
             <a href="#lightning-nodo">Lightning Nodo</a>
             <a href="#proyectos">Proyectos</a>
         </nav>
@@ -107,7 +114,7 @@
         <section class="section centered">
             <div class="section-text">
                 <h2>¿Qué es Blessing?</h2>
-                <p>Blessing es un proyecto de token de multiutilidad que permite su uso en diversos sectores. Desde negocios de venta y transacciones hasta inversiones en bienes raíces y alquileres, los poseedores del token pueden participar activamente y generar ganancias a través del alquiler de propiedades.</p>
+                <p>Blessing es un proyecto de multiutilidad que permite su uso en diversos sectores. Desde negocios, transacciones, inversiones en activos, hasta el uso para juegos, nft, coleccion del token o simplemente diversión; los poseedores del token pueden participar activamente de todo lo que puede brindar este proyecto.</p>
             </div>
             <img src="b1.jfif" alt="Uso del token">
         </section>
@@ -121,17 +128,22 @@
         <section class="section">
             <div class="section-text">
                 <h2>Entretenimiento y Tecnología</h2>
-                <p>Además de su uso en transacciones y proyectos sociales, Blessing también puede ser utilizado en juegos, NFTs y actividades de ocio, brindando una experiencia interactiva y divertida para los usuarios.</p>
+                <p>Además de su uso en transacciones y proyectos sociales, Blessing también puede ser utilizado en juegos, NFTs y actividades de ocio, brindando una experiencia interactiva y divertida para la comunidad.</p>
             </div>
             <img src="b3.jfif" alt="Uso en juegos y NFTs">
         </section>
         <section class="section">
             <div class="section-text">
-                <h2>Únete a la Revolución Financiera</h2>
-                <p>Con Blessing, no solo puedes realizar transacciones y generar ingresos, sino que también puedes formar parte de un movimiento que busca cambiar el mundo a través de la tecnología blockchain.</p>
+                <h2>Comunidad</h2>
+                <p>Con Blessing, no solo puedes realizar transacciones y generar ingresos, sino que también puedes formar parte de una comunidad que busca una opción mas en la tecnología blockchain.</p>
             </div>
             <img src="b4.jfif" alt="Innovación financiera">
         </section>
+        
     </main>
 </body>
 </html>
+
+
+
+

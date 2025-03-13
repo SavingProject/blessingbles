@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessing</title>
+    <link rel="icon" type="image/png" href="bles.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('fondominer.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: linear-gradient(135deg, #007acc, #005b99);
+            color: white;
+        }
+        .header img {
+            height: 100px;
+            margin-right: 15px;
+        }
+        .header h1 {
+            flex-grow: 1;
+            margin: 0;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        .header h1 a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav {
+            display: flex;
+            gap: 25px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #ffcc00;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.90);
+            border-radius: 10px;
+        }
+        .content img {
+            height: 150px;
+            margin-right: 20px;
+        }
+        .info {
+            font-size: 18px;
+        }
+        .info h2 {
+            font-size: 34px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #007acc, #005b99);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .info .contract {
+            font-size: 28px;
+            font-weight: bold;
+            color: #007acc;
+        }
+        .commerce {
+            margin-top: 30px;
+        }
+        .commerce h2 {
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #007acc, #005b99);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .commerce-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+        .commerce img {
+            height: 100px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .commerce a {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007acc;
+            text-decoration: none;
+        }
+        .commerce a:hover {
+            text-decoration: underline;
+        }
+        .network {
+            display: flex;
+            align-items: center;
+        }
+        .network img {
+            height: 40px;
+            margin-left: 10px;
+        }
+.tokenomics {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .tokenomics h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #005b99;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .tokenomics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .tokenomics-item {
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="bles.png" alt="Blessing Logo">
+        <h1><a href="index.html">Blessing</a></h1>
+        <nav class="nav">
+            <a href="#token-bles">Token Bles</a>
+            <a href="#lightning-nodo">Lightning Nodo</a>
+            <a href="#proyectos">Proyectos</a>
+        </nav>
+    </header>
+    <section class="content">
+        <div style="display: flex; align-items: flex-start;">
+            <img src="bles.png" alt="Token Blessing">
+            <div class="info">
+                <h2><strong>Token Blessing</strong></h2>
+                <p><strong>Nombre:</strong> Blessing</p>
+                <p><strong>Símbolo:</strong> Bles</p>
+                <p><strong>Tipo:</strong> ERC20</p>
+                <p><strong>Suministro Total:</strong> 300,000,000 Bles</p>
+                <p class="network"><strong>Red:</strong> <a href="https://tuxachain.network/" target="_blank">TuxaChain</a> <img src="tuxa.png" alt="TuxaChain"></p>
+                <p class="contract"><strong>Contrato:</strong> 0x005745210B5d50058BF5BbcE58B10664ca2612f0</p>
+            </div>
+        </div>
+        <div class="commerce">
+            <h2><strong>Comercio</strong></h2>
+            <div class="commerce-content">
+                <a href="https://www.trisolaris.io/" target="_blank">
+                    <img src="trisolaris.jpg" alt="Trisolaris Dex">
+                </a>
+                <a href="https://www.trisolaris.io/" target="_blank">Trisolaris Dex</a>
+            </div>
+        </div>
+    </section>
+<section class="tokenomics">
+            <h2>Tokenomics</h2>
+            <div class="tokenomics-container">
+                <div class="tokenomics-item">Liquidez y Exchange<br>50% Distribuido entre pool de liquidez y exchange</div>
+                <div class="tokenomics-item">Entretenimiento<br>25% Para Juegos, NFT, entretenimiento</div>
+                <div class="tokenomics-item">Social<br>15% Como recurso para ayuda humanitaria</div>
+                <div class="tokenomics-item">Otro<br>10% Para uso exclusivo del proyecto para promociones, regalos, pagos, entre otras cosas</div>
+            </div>
+        </section>
+</body>
+</html>
+
+
+
